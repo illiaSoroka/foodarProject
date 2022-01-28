@@ -1,0 +1,53 @@
+{
+  "name": "foodar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-rsync": "^0.0.9",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "jquery": "^3.6.0",
+    "jquery.min.js": "^3.5.1",
+    "node-sass": "^7.0.1",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.47.0"
+  },
+  "dependencies": {
+    "@types/jquery": "^3.5.13",
+    "debug": "^4.3.3",
+    "iquery": "^0.0.2",
+    "node": "^17.3.0"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions",
+    "last 1 version",
+    ">1%",
+    "not dead",
+    "ie >= 8",
+    "edge >= 15",
+    "ie_mob >= 10",
+    "ff >= 45",
+    "chrome >= 45",
+    "safari >= 7",
+    "opera >= 23",
+    "ios >= 7",
+    "android >= 4",
+    "bb >= 10"
+  ]
+}
