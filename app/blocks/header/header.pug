@@ -1,14 +1,15 @@
 mixin header()
 	header.header
-		.container 
+		.container#container 
 			nav.menu
-				img(src="img/logo.png", alt="logo")
+				a.header__link(href="index.html") 
+					img(src="img/logo.png", alt="logo")
 				ul.menu__list
 					li.menu__list-item 
-						a.menu__list-link(href="../../FoodarSingIn/app/index.html") Sing-In
+						a.menu__list-link(href="../../FoodarSignIn/app/index.html") Sign-In
 					
 					li.menu__list-item 
-						a.menu__list-link(href="../../FoodarRegistrer/app/registrer.html") Registrer
+						a.menu__list-link(href="../../FoodarRegister/app/register.html") Register
 					
 					li.menu__list-item 
 						a.menu__list-link(href="../../FoodarRequest/app/index.html") Request
