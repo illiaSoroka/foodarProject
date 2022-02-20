@@ -1,19 +1,50 @@
 #container
-	padding-left: 0
+	padding: 0
 .menu
+	position: relative
 	@extend %flex-justify
-
 	height: 80px
-	&__list
+	&__wrapper
+		position: relative
+		width: 25%
 		@extend %flex-align
-		margin: 0 13px 6px 0
+	&__list
+
+		@extend %flex-align
+		margin: 0 10px 6px
+		flex-wrap: wrap
+		float: right
 
 	&__list-item::after
 		content: "\002f"
 		padding: 0 3.8px
+		font-size: 15px
 
 	&__list-item:last-child::after
 		content: ""
 	&__list-link
 		text-transform: uppercase
 		font-size: 14px
+	&__link
+		margin-top: 1px
+
+.min-menu
+	display: none
+	position: absolute
+	@extend %flex-justify
+	flex-direction: column
+	right: 0
+	top: 25px
+	background-color: #fff
+	padding-right: 5px
+	&__btn
+		display: flex
+		justify-content: flex-end
+		background-color: #ffffff00
+		border: none
+		padding-bottom: 10px
+		cursor: pointer
+	&__list
+		display: flex
+		align-items: start
+		flex-direction: column

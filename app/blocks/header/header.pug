@@ -2,14 +2,27 @@ mixin header()
 	header.header
 		.container#container 
 			nav.menu
-				a.header__link(href="index.html") 
+				a.menu__link(href="index.html") 
 					img(src="img/logo.png", alt="logo")
-				ul.menu__list
-					li.menu__list-item 
-						a.menu__list-link(href="../../FoodarSignIn/app/index.html") Sign-In
-					
-					li.menu__list-item 
-						a.menu__list-link(href="../../FoodarRegister/app/register.html") Register
-					
-					li.menu__list-item 
-						a.menu__list-link(href="../../FoodarRequest/app/index.html") Request
+				.menu__wrapper
+					ul.menu__list
+						li.menu__list-item 
+							a.menu__list-link(href="../../FoodarSignIn/app/index.html") Sign&#45;In
+						
+						li.menu__list-item 
+							a.menu__list-link(href="../../FoodarRegister/app/register.html") Register
+						
+						li.menu__list-item 
+							a.menu__list-link(href="../../FoodarRequest/app/index.html") Request
+					nav.min-menu
+						button.min-menu__btn 
+							img(src="img/icon_menu.png", alt="#")
+						ul.min-menu__list
+							li.min-menu__list-item 
+								a.min-menu__list-link(href="../../FoodarSignIn/app/index.html") Sign-In
+							
+							li.min-menu__list-item 
+								a.min-menu__list-link(href="../../FoodarRegister/app/register.html") Register
+							
+							li.min-menu__list-item 
+								a.min-menu__list-link(href="../../FoodarRequest/app/index.html") Request
