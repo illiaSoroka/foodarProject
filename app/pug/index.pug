@@ -4,6 +4,10 @@ include ../blocks/header/header.pug
 
 include ../blocks/main_content/main_content.pug
 
+include ../blocks/how_it_works/how_it_works.pug
+
+include ../blocks/restaurants/restaurants.pug
+
 include ../blocks/footer/footer.pug
 
 
@@ -14,7 +18,12 @@ block title
 block pagecontent
 	.wrapper
 		+header()
+		main.main
+		
+			+main_content()
 
-		+main_content()
+			+how_it_works()
+
+			+restaurants()
 		
 		+footer()

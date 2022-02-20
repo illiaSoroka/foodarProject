@@ -4,6 +4,8 @@
 
 @import "../blocks/header/header.sass"
 @import "../blocks/main_content/main_content.sass"
+@import "../blocks/how_it_works/how_it_works.sass"
+@import "../blocks/restaurants/restaurants.sass"
 @import "../blocks/footer/footer.sass"
 
 ::placeholder
@@ -37,9 +39,8 @@ body
 .wrapper
 	display: flex
 	flex-direction: column
-	height: 100%
 
-.main-content
+.main
 	flex: 1 0 auto
 
 .footer
@@ -59,6 +60,17 @@ body
 
 .text-center
 	text-align: center
+
+h1, h2, h3
+	text-transform: uppercase
+	margin: 0
+h2
+	font-family: 'Aguafina Script', cursive
+	font-size: 50px
+	letter-spacing: 9px
+	line-height: 36px
+	color: $accent
+	margin: 40px 0 20px
 
 a
 	text-decoration: none

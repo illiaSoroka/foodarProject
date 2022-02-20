@@ -1,0 +1,46 @@
+//setting header title
+.contant-head
+	position: relative
+	@extend	%flex-center
+	h2
+		margin-bottom: 23px
+
+.contant-head::after
+	@extend %after-border
+	width: 100%
+	bottom: 0
+
+//setting for contant
+.how-it-works
+	height: 100vh
+	&__wrapper
+		min-height: 240px
+		padding: 3em
+		display: flex
+
+	&__img
+		width: 34%
+		margin-right: 10px
+		img
+			height: 350px
+	&__info
+		width: 63%
+		p
+			margin: 15px 0
+			color: #787878
+	&__info-txt-bold
+		color: black
+		font-weight: bold
+
+	&__ol-list
+		margin-top: 20px
+
+	&__btn-link
+		color: #fff
+		background-color: #000
+		padding: 17px 25px
+		border-radius: 6px
+		position: relative
+		top: 1em
+	&__btn-link:hover
+		background-color: $accent

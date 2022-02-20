@@ -20,18 +20,13 @@
 		margin: 10px 0
 
 	&__title
-		text-transform: uppercase
 		margin: 17px 0
 		font-size: 17.55px
 
 	&__title::after
-		content: ""
-		display: block
+		@extend %after-border
 		width: 20px
-		height: 3px
-		position: absolute
 		margin-top: 17px
-		background-color: #eaeaea
 
 	&__social-list
 		display: flex
