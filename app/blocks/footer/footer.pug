@@ -3,7 +3,7 @@ mixin footer()
 		section.footer__content 
 			.container 
 				.footer__inner 
-					nav.footer__siteMap
+					nav.footer__siteMap.footer__nav
 						h3.footer__title Site Map
 						ul.footer__siteMap-list.footer__list
 							li.footer__siteMap-item.footer__item
@@ -11,13 +11,13 @@ mixin footer()
 							li.footer__siteMap-item.footer__item
 								a.footer__siteMap-link(href="#") Register
 							li.footer__siteMap-item.footer__item
-								a.footer__siteMap-link(href="#") How it works
-					.footer__menu
+								a.footer__siteMap-link(href="#") How it All Works
+					section.footer__menu.footer__nav
 						h3.footer__title Legal
 						ul.footer__menu-list.footer__list
 							li.footer__menu-item.footer__item Privacy Policy
 							li.footer__menu-item.footer__item Terms &#38; Conditions
-					.footer__social
+					section.footer__social.footer__nav
 						h3.footer__title Social
 						ul.footer__social-list.footer__list
 							li.footer__social-item.footer__item
@@ -32,6 +32,7 @@ mixin footer()
 
 		section.footer__copyright
 			.container
-				p &copy; 2022. All rights reserved
+				p.footer__copyright-copy &copy; 2022. All rights reserved
+				p.footer__copyright-version Version 1.0.9
 	
 

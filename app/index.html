@@ -28,57 +28,128 @@
     <!-- Custom HTML-->
     <div class="wrapper">
       <header class="header">
-        <div class="container"> 
-          <nav class="menu"><img src="img/logo.png" alt="logo"/>
-            <ul class="menu__list">
-              <li class="menu__list-item"> <a class="menu__list-link" href="../../FoodarSingIn/app/index.html">Sing-In</a></li>
-              <li class="menu__list-item"> <a class="menu__list-link" href="../../FoodarRegistrer/app/registrer.html">Registrer</a></li>
-              <li class="menu__list-item"> <a class="menu__list-link" href="../../FoodarRequest/app/index.html">Request</a></li>
-            </ul>
+        <div class="container" id="container"> 
+          <nav class="menu"><a class="menu__logo" href="index.html"> <img src="img/logo.png" alt="logo"/></a>
+            <div class="menu__wrapper">
+              <ul class="menu__list">
+                <li class="menu__list-item"> <a class="menu__list-link" href="../../FoodarSignIn/app/index.html">Sign&#45;In</a></li>
+                <li class="menu__list-item"> <a class="menu__list-link" href="../../FoodarRegister/app/register.html">Register</a></li>
+                <li class="menu__list-item"> <a class="menu__list-link" href="../../FoodarRequest/app/index.html">Request</a></li>
+              </ul>
+              <nav class="min-menu">
+                <button class="min-menu__btn"> <img src="img/icon_menu.png" alt="#"/></button>
+                <ul class="min-menu__list">
+                  <li class="min-menu__list-item"> <a class="min-menu__list-link" href="../../FoodarSignIn/app/index.html">Sign&#45;In</a></li>
+                  <li class="min-menu__list-item"> <a class="min-menu__list-link" href="../../FoodarRegister/app/register.html">Register</a></li>
+                  <li class="min-menu__list-item"> <a class="min-menu__list-link" href="../../FoodarRequest/app/index.html">Request</a></li>
+                </ul>
+              </nav>
+            </div>
           </nav>
         </div>
       </header>
-      <main class="main-content">
-        <div class="container">
-          <div class="main-content__inner">
-            <p>content</p>
-            <h1>12h</h1>
+      <main class="main">
+        <section class="main-content">
+          <h1>Try A New Meal Today</h1>
+        </section>
+        <section class="how-it-works">
+          <div class="container">
+            <section class="how-it-works__inner contant-head">
+              <h2>how it works</h2>
+            </section>
+            <section class="how-it-works__wrapper"> 
+              <div class="how-it-works__img img-responsive"> <img src="img/menu.png" alt="menu"/></div>
+              <div class="how-it-works__info">
+                <p><span class="how-it-works__info-txt-bold">The process is simple.</span>We deliver whatever food you order from our partner restaurants. We provide an experience to our patrons with utmost courtesy and hospitality. Try out Foodar today!</p>
+                <ol class="how-it-works__ol-list">
+                  <li>Order your food</li>
+                  <li>Find a driver</li>
+                  <li>Place pickup request</li>
+                </ol><a class="how-it-works__btn-link" href="#">Read More</a>
+              </div>
+            </section>
           </div>
-        </div>
+        </section>
+        <section class="restaurants">
+          <div class="container">
+            <section class="restaurants__inner contant-head">
+              <h2>Feature Restaurants</h2>
+            </section>
+            <section class="restaurants__wrapper"> 
+              <div class="restaurants__restaurant-section">
+                <div class="restaurants__img-responsive img"><img src="img/fish.png" alt="Fish &amp; Chips"/></div>
+                <div class="restaurants__title">
+                  <h3>fish &#38; chips gallore!</h3>
+                </div>
+                <p>Since 1968, Fish &#38; Chips Gallore! has served the bay area with its palatable array of fried fish and sailor's choice dessert.</p>
+                <p>Order today and recieve 15% your total meal and we'll throw in our famous hush puppies as a thank you.</p>
+              </div>
+              <div class="restaurants__restaurant-section">
+                <div class="restaurants__img-responsive img"><img src="img/burger.png" alt="Bubba Joe`s"/></div>
+                <div class="restaurants__title">
+                  <h3>bubba joe&#39;s</h3>
+                </div>
+                <p>When you actually, really desire a burger, you order from Bubba Joe's. Unlike the fast food business, we eat our own food and love it.</p>
+                <p>Order 2 burgers and get a small fry on us today.</p>
+              </div>
+              <div class="restaurants__restaurant-section">
+                <div class="restaurants__img-responsive img"><img src="img/dessert.png" alt="Awww yeah Dessert"/></div>
+                <div class="restaurants__title">
+                  <h3>awww yeah Desserts</h3>
+                </div>
+                <p>Welcome to your favorite part of dinner, lunch, breakfast, brunch, any meal. We know you don't need encouragement from us to eat our desserts. Look at the picture. You know you want it.</p>
+                <p>Just for you, we'll knock off 10% to make your wallet feel good too.</p>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section class="your-city">
+          <div class="container">
+            <section class="your-city__inner">
+              <h3 class="your-city__title">Find the nearest city</h3>
+              <p>Fill out the form below with your zip code of where you live.</p>
+              <form class="your-city__form">
+                <input class="your-city__input-zipcode" type="text" placeholder="Zipcode" maxlenght="5"/>
+                <button class="your-city__zipcode-button" type="submit">Go</button>
+              </form>
+            </section>
+          </div>
+        </section>
       </main>
       <footer class="footer"> 
         <section class="footer__content"> 
           <div class="container"> 
             <div class="footer__inner"> 
-              <nav class="footer__siteMap">
+              <nav class="footer__siteMap footer__nav">
                 <h3 class="footer__title">Site Map</h3>
                 <ul class="footer__siteMap-list footer__list">
                   <li class="footer__siteMap-item footer__item"><a class="footer__siteMap-link" href="#">Home</a></li>
                   <li class="footer__siteMap-item footer__item"><a class="footer__siteMap-link" href="#">Register</a></li>
-                  <li class="footer__siteMap-item footer__item"><a class="footer__siteMap-link" href="#">How it works</a></li>
+                  <li class="footer__siteMap-item footer__item"><a class="footer__siteMap-link" href="#">How it All Works</a></li>
                 </ul>
               </nav>
-              <div class="footer__menu">
+              <section class="footer__menu footer__nav">
                 <h3 class="footer__title">Legal</h3>
                 <ul class="footer__menu-list footer__list">
                   <li class="footer__menu-item footer__item">Privacy Policy</li>
                   <li class="footer__menu-item footer__item">Terms &#38; Conditions</li>
                 </ul>
-              </div>
-              <div class="footer__social">
+              </section>
+              <section class="footer__social footer__nav">
                 <h3 class="footer__title">Social</h3>
                 <ul class="footer__social-list footer__list">
                   <li class="footer__social-item footer__item"><a class="footer__social-link" href="https://github.com/illiasoroka" target="_blank"> <img src="img/icons/github.svg" alt="GitHub"/></a></li>
                   <li class="footer__social-item footer__item"><a class="footer__social-link" href="https://www.linkedin.com/in/illia-soroka-224952186/" target="_blank"> <img class="linkedin" src="img/icons/linkedin.svg" alt="linkedin"/></a></li>
                   <li class="footer__social-item footer__item"><a class="footer__social-link" href="https://www.instagram.com/ilysha_soroka/" target="_blank"> <img src="img/icons/instagram.svg" alt="FaceBook"/></a></li>
                 </ul>
-              </div>
+              </section>
             </div>
           </div>
         </section>
         <section class="footer__copyright">
           <div class="container">
-            <p>&copy; 2022. All rights reserved</p>
+            <p class="footer__copyright-copy">&copy; 2022. All rights reserved</p>
+            <p class="footer__copyright-version">Version 1.0.9</p>
           </div>
         </section>
       </footer>
